@@ -39,6 +39,9 @@ public class Game {
     @Column
     private String website;         //The game's website.
 
+    @Column
+    private String history;         //The game's external history data.
+
 
     public long getId(){
         return id;
@@ -126,5 +129,13 @@ public class Game {
 
     public void setWebsite(String website){
         this.website = website;
+    }
+
+    public String getHistory(){
+        return history;
+    }
+
+    public void setHistory(String history){
+        this.history = history;
     }
 }
